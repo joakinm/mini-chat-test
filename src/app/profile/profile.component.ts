@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileComponent implements OnInit {
   public buttonClicked = false;
+  public isFavourite = false;
   public user = {
     name: 'Sophie',
     imageUrl: 'https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
@@ -23,4 +24,9 @@ export class ProfileComponent implements OnInit {
   public onClick() {
     this.buttonClicked = !this.buttonClicked;
   }
+
+  onFavouriteChange() {
+    this.isFavourite = !this.isFavourite;
+  }
+
 }
