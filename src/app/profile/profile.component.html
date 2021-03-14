@@ -1,1 +1,15 @@
-<p>profile works!</p>
+<div class="container">
+    <div class="d-flex header pb-2">
+        <h2 class="margin-auto">{{user.name}}</h2>
+    </div>
+    <div class="div-photo d-flex margin-auto mt-4">
+        <img class="profile-img margin-auto" [src]="user.imageUrl" [alt]="user.name">
+        <div id="state" [ngClass]="user.state ? 'online' : 'offline'">{{user.state ? 'ONLINE' : 'OFFLINE'}}</div>
+    </div>
+    <h3>{{user.name}}, {{user.age}}</h3>
+    <small class="location">{{user.location}}</small>
+    <p>{{user.description}}</p>
+    <div class="d-flex">
+        <button class="btn w-75 margin-auto" [ngClass]="buttonClicked ? 'btn-warning ' : 'btn-dark'" type="button" (click)="onClick()">{{buttonClicked ? 'REMOVE FRIEND' : 'ADD AS FRIEND'}}</button>
+    </div>
+</div>

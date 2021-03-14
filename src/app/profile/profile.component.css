@@ -1,0 +1,45 @@
+.profile-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.header {
+    background-color: #3C3C3C;
+    color: white;
+}
+
+.div-photo {
+    position: relative;
+    max-width: 400px;
+}
+
+.margin-auto {
+    margin: 0 auto;
+}
+
+.online {
+    background-color: #5AEC90;
+    color: white;
+}
+
+.offline {
+    background-color: red;
+    color: white;
+}
+
+.location {
+    color: #F8739F;
+    font-weight: 800;
+}
+
+#state {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-radius: 50%;
+    width: 70px;
+    text-align: center;
+}
