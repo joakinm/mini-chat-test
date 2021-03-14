@@ -2,3 +2,37 @@
 
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import "~bootstrap-icons/font/bootstrap-icons.css";
+.profile-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.header {
+    background-color: #3C3C3C;
+    color: white;
+}
+
+.div-photo {
+    position: relative;
+    max-width: 400px;
+}
+
+.margin-auto {
+    margin: 0 auto;
+}
+
+.online {
+    background-color: #5AEC90;
+    color: white;
+}
+
+.offline {
+    background-color: red;
+    color: white;
+}
+
+.location {
+    color: #F8739F;
+    font-weight: 800;
+}
