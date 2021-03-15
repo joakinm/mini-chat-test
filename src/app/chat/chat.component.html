@@ -14,7 +14,7 @@
                     <div class="chat msg-them">
                         {{c.message}}
                     </div>
-                    <img class="imgThumb" src="{{otherUser.imageUrl}}" alt="thumbUsr">
+                    <img class="imgThumb" (click)="onReturn()" src="{{otherUser.imageUrl}}" alt="thumbUsr" data-toggle="tooltip" data-placement="left" title="Return to profile">
                 </div>
             </ng-container>
             <ng-template #messagethem>
@@ -32,10 +32,11 @@
     </section>
     <form #f="ngForm">
         <div class="d-flex row-xs-12">
-            <input type="text" class="input-button" [(ngModel)]="message" name="message">
-            <div class="">
-                <button [disabled]="!message" class="btn btn-primary" type="button" (click)="onSendMessage()">Send message</button>
-            </div>
+            <textarea type="text" class="w-100" [(ngModel)]="message" name="message">
+            </textarea>
+            <button [disabled]="!message" class="btn btn-primary input-button ml-2" type="button" (click)="onSendMessage()">
+                Send
+            </button>
         </div>
     </form>
 </div>

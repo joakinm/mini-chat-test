@@ -1,4 +1,4 @@
-<div class="d-flex header align-items-center p-2">
+<div class="d-flex header align-items-center p-2" [ngClass]="buttonClicked ? 'online' : ''">
     <div class="col-xs-1">
         <i class="bi bi-chevron-compact-left" (click)="onReturn()"></i>
     </div>
@@ -7,10 +7,10 @@
     </div>
 </div>
 <div class="div-photo d-flex margin-auto mt-4">
-    <img class="profile-img margin-auto" [src]="user.imageUrl" [alt]="user.name">
+    <img class="profile-img margin-auto" (click)="onReturn()" [src]="user.imageUrl" [alt]="user.name" data-toggle="tooltip" data-placement="left" title="Go to chat">
     <div id="state" [ngClass]="user.state ? 'online' : 'offline'">{{user.state ? 'ONLINE' : 'OFFLINE'}}</div>
 </div>
-<div class="row justify-content-between">
+<div class="row justify-content-between p-3">
     <div class="col-xs-11 pull-left">
         <h3>{{user.name}}, {{user.age}}</h3>
         <small class="location">{{user.location}}</small>
@@ -22,5 +22,7 @@
 
 <p>{{user.description}}</p>
 <div class="d-flex">
-    <button class="btn w-75 margin-auto" [ngClass]="buttonClicked ? 'btn-warning ' : 'btn-dark'" type="button" (click)="onClick()">{{buttonClicked ? 'REMOVE FRIEND' : 'ADD AS FRIEND'}}</button>
+    <button class="btn w-75 margin-auto" [ngClass]="buttonClicked ? 'btn-warning ' : 'btn-dark'" type="button" (click)="onClick()">
+        {{buttonClicked ? 'REMOVE FRIEND' : 'ADD AS FRIEND'}}
+    </button>
 </div>

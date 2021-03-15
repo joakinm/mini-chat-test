@@ -70,5 +70,6 @@ blockquote {
 }
 
 .input-button {
-    width: 86%;
+    width: 62px;
+    height: 52px;
 }
