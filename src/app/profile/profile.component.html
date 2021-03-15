@@ -6,9 +6,13 @@
         <h2 class="margin-auto">{{user.name}}</h2>
     </div>
 </div>
-<div class="div-photo d-flex margin-auto mt-4">
-    <img class="profile-img margin-auto" (click)="onReturn()" [src]="user.imageUrl" [alt]="user.name" data-toggle="tooltip" data-placement="left" title="Go to chat">
-    <div id="state" [ngClass]="user.state ? 'online' : 'offline'">{{user.state ? 'ONLINE' : 'OFFLINE'}}</div>
+<div class="div-photo d-flex justify-content-center mt-4">
+    <div id="photo-container">
+        <img id="photo" (click)="onReturn()" [src]="user.imageUrl" [alt]="user.name" data-toggle="tooltip" data-placement="left" title="Go to chat">
+    </div>
+    <div class="position-relative" id="state-container">
+        <div id="state" [ngClass]="user.state ? 'online' : 'offline'">{{user.state ? 'ONLINE' : 'OFFLINE'}}</div>
+    </div>
 </div>
 <div class="row justify-content-between p-3">
     <div class="col-xs-11 pull-left">

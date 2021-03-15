@@ -14,12 +14,12 @@
                     <div class="chat msg-them">
                         {{c.message}}
                     </div>
-                    <img class="imgThumb" (click)="onReturn()" src="{{otherUser.imageUrl}}" alt="thumbUsr" data-toggle="tooltip" data-placement="left" title="Return to profile">
+                    <img class="img-thumb" (click)="onReturn()" src="{{otherUser.imageUrl}}" alt="thumbUsr" data-toggle="tooltip" data-placement="left" title="Return to profile">
                 </div>
             </ng-container>
             <ng-template #messagethem>
                 <div class="d-flex w-100">
-                    <img class="imgThumb" src="{{imgActualUser}}" alt="thumbUsr">
+                    <img class="img-thumb" src="{{imgActualUser}}" alt="thumbUsr">
                     <div class="chat msg-me">
                         {{c.message}}
                     </div>

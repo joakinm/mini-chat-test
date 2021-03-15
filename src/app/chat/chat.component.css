@@ -20,13 +20,12 @@ blockquote {
 }
 
 .chat-right {
-    align-items: end;
     justify-content: flex-end;
     width: 100%;
 }
 
 .msg-me {
-    background-color: white;
+    background-color: #ffffff;
     margin-left: 15px;
     overflow-wrap: break-word;
 }
@@ -36,7 +35,7 @@ blockquote {
     width: 0;
     height: 0;
     border-bottom: 15px solid transparent;
-    border-right: 15px solid white;
+    border-right: 15px solid #ffffff;
     position: absolute;
     left: -15px;
     top: 12px;
@@ -44,7 +43,7 @@ blockquote {
 
 .msg-them {
     background-color: #54BAE2;
-    color: white;
+    color: #ffffff;
     margin-right: 15px;
 }
 
@@ -60,10 +59,10 @@ blockquote {
 }
 
 .background-chat {
-    background-color: rgb(221, 221, 221);
+    background-color: #EDEBEC;
 }
 
-.imgThumb {
+.img-thumb {
     width: 40px;
     height: 40px;
     border-radius: 50%;
